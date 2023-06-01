@@ -288,8 +288,8 @@ $(function () {
 		// in 'messages' user have to specify message as per rules
 		messages: {
 			first_name: {
-				required: " Please enter a username",
-				minlength: " Your username must consist of at least 3 characters",
+				required: " Please enter first name",
+            	minlength: " Your first name must consist of at least 3 characters",
 			},
 			last_name: " Please enter your lastname",
 			email: {
@@ -337,6 +337,7 @@ document.addEventListener("submit", e => {
 			// Create result message container and copy HTML from doc
 			const result = document.createElement("div");
 			result.innerHTML = doc.body.innerHTML;
+      
 
 			// Allow focussing this element with JavaScript
 			result.tabIndex = -1;
@@ -359,7 +360,7 @@ document.addEventListener("submit", e => {
 
 			// Hide the busy state
 			statusBusy.hidden = false;
-
+       
 			// Show error message
 			statusFailure.hidden = false;
 		});

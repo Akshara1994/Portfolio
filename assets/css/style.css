@@ -916,6 +916,10 @@ section {
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
+.error
+{
+  color: red;
+}
 
 .contact .php-email-form .validate {
   display: none;
